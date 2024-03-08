@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #DD2F6E;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column {
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    color: var(--color-dark);
+    box-shadow: 10px 10px 5px #E6A4B4;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#register {
+    background-color: #2ecc71;  
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid #27ae60;  
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a .btn-custom{
+    background-color: #3498db;  
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid #2980b9;  
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#register {
+    margin-bottom: 20px;
+}
+
+#yeokart-info{
+    font-style: italic;
+}
+::placeholder{
+    font-size: 0.8rem;
+}
+
+#message {
+    text-align: start;
+    bottom: -30px;
+    color: #fff;
+    font-size: 0.8rem;
+    display: none;
+}
+
+#passwordMatch{
+    text-align: start;
+    bottom: -30px;
+    font-size: 0.8rem;
+}
+
+a .btn-custom:hover{
+    background-color: #2980b9;
+    color: #ffffff;
+}
+#register:hover {
+    background-color: #27ae60;  
+    color: #ffffff;
+}
+
+@media (min-width: 683px) and (max-width: 960px) {
+    form {
+        padding: 20px;
+    }
+
+    a .btn-custom,
+    #register {
+        margin-top: 10px;
+    }
+
+    .form-group,
+    .button-container {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .right-column p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    a .btn-custom, #register {
+        font-size: 0.8rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    form {
+        padding: 20px;
+    }
+
+    a .btn-custom,
+    #register {
+        margin-top: 10px;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .form-group,
+    .button-container {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .right-column p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .right-column h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    a .btn-custom, #register {
+        font-size: 0.8rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        font-size: 0.8rem;
+    }
+}
